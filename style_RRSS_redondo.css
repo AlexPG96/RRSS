@@ -53,6 +53,8 @@ ul li span {
     color: var(--color-iconos);
     font-size: 1.875em !important;
     border-radius: 50%;
+    box-shadow: -6px 6px 0 #2a2a2a !important;
+
 }
 
 ul li:hover span {
