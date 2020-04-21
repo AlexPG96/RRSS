@@ -17,11 +17,13 @@
 }
 
 body {
-    background-color: #907a70;
+    /* background-color: #907a70; */
+    background-color: black;
+    opacity: 0.6;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50em;
+    min-height: 45em;
 }
 
 ul {
@@ -54,6 +56,7 @@ ul li span {
     font-size: 1.875em !important;
     border-radius: 50%;
     box-shadow: -6px 6px 0 #2a2a2a !important;
+    border: 0.4px solid rgba(255, 255, 255, 0.1) ;
 
 }
 
@@ -62,5 +65,88 @@ ul li:hover span {
     color: #fff;
     transition: 0.5s;
     box-shadow: -1px 1px 1px var(--color-sombras) ;
+    
 
+}
+/* 
+ul li:before {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 102.5%;
+    height: 10px;
+    background: #2a2a2a;
+    transform-origin: top;
+    transform: skewX(-41deg);
+    
+}
+
+ul li:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 9px;
+    height: 102.38%;
+    background-color: #2a2a2a;
+    transform-origin: right;
+    transform: skewY(-49deg);
+} */
+
+
+
+ul li:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
+    box-shadow: none !important;
+    opacity: 1;
+}
+ul li:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
+    box-shadow: none !important;
+    opacity: 0.8;
+}
+ul li:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
+    box-shadow: none !important;
+    opacity: 0.6;
+}
+ul li:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
+    box-shadow: none !important;
+    opacity: 0.4;
+}
+ul li:hover span:nth-child(1) {
+    transform: translate(0px, 0px);
+    box-shadow: -6px 6px 0 rgba(42, 42, 42, 1);
+    
+    opacity: 0.2;
+}
+
+.codepen:hover span {
+    background-color: var(--color-codepen);
+}
+
+.linkedin:hover span{
+    background-color: var(--color-linkedin);
+}
+
+.instagram:hover span{
+    background-color: var(--color-instagram);
+}
+
+.twitter:hover span{
+    background-color: var(--color-twitter);
+}
+
+.whatsapp:hover span {
+    background-color: var(--color-whatsapp);
+}
+
+.facebook:hover span{
+    background-color: var(--color-facebook);
+}
+
+.github:hover span{
+    background-color: var(--color-github);
 }
